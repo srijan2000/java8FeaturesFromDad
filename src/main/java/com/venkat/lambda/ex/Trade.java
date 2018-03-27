@@ -1,6 +1,7 @@
 package com.venkat.lambda.ex;
 
 public class Trade {
+
     private String ticker;
     private String status;
     private int quantity;
