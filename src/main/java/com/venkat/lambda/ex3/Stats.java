@@ -14,13 +14,16 @@ public class Stats {
     }
 
     private void testMaxAndMin(){
-        OptionalInt max = streamOfInts.max();
+        IntStream streamOfInts2 = IntStream.rangeClosed(90, 100);
+        OptionalInt max = streamOfInts2.max();
         System.out.println("Max: " + max.getAsInt());
 
-        OptionalInt min = streamOfInts.min();
+        streamOfInts2 = IntStream.rangeClosed(90, 100);
+        OptionalInt min = streamOfInts2.min();
         System.out.println("min: " + min.getAsInt());
 
-        OptionalDouble avg = streamOfInts.average();
+        streamOfInts2 = IntStream.rangeClosed(90, 100);
+        OptionalDouble avg = streamOfInts2.average();
         System.out.println("avg: " + avg.getAsDouble());
     }
 
