@@ -7,6 +7,7 @@ public class Trade {
     private int quantity;
     private int id;
 
+
     public Trade(){}
 
     public Trade(String ticker, int quantity, String status){
@@ -45,7 +46,7 @@ public class Trade {
     }
 
     public String getInstrument(){
-        return "";
+        return this.ticker;
     }
 
     public int getId(){
