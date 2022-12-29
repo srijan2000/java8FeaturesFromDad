@@ -15,7 +15,6 @@ public class TradeUtil {
     }
 
 
-
     public static List<Trade> createTrades2(){
         List<Trade> trades = new ArrayList<Trade>();
 

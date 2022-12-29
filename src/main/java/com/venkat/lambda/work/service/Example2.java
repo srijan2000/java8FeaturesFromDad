@@ -27,7 +27,6 @@ public class Example2 {
                 .collect(Collectors.toList());
         collect.stream().forEach(System.out::println);
 
-
     }
 
     public static boolean isNotCheck(Employee emp){

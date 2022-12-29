@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 public class Example5 {
 
     public static void main(String[] args) throws IOException {
-        final List<String> collect = Files.lines(Paths.get("D:/work/srijan/java8Features/pom.xml"))
+        final List<String> collect = Files.lines(Paths.get("D:/MyProjects/MyWork/java8Features/pom.xml"))
                 .filter(line -> line.contains("name"))
                 .map(line -> {
                     return line.replaceAll("name", "")

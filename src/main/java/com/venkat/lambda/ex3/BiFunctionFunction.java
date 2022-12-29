@@ -19,7 +19,7 @@ public class BiFunctionFunction {
 
         BiFunction<Employee, Manager, Employee> perAssistant = empManagerBiFunction.andThen(empManagerFunction);
         Employee pa = perAssistant.apply(emp, manager);
-
+        System.out.println("PA " + pa);
     }
 
     public static void main(String[] args) {

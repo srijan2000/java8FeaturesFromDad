@@ -37,8 +37,11 @@ public class Partitioning {
 
     public static void main(String[] args) {
         Partitioning p = new Partitioning();
+        System.out.println("*************");
         p.partitionByExecutives();
+        System.out.println("*************");
         p.partitioningAndGrouping();
+        System.out.println("*************");
         p.partitioningMultiLevel();
     }
 }

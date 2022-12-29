@@ -33,12 +33,13 @@ public class PerformanceMeasurement {
 
         Instant end = Instant.now();
         Duration d = Duration.between(start, end);
-        System.out.printf("%s %d %s", "Aggregating trades took ", d.toMillis(), " ms in Sequential mode.");
+        System.out.printf("%s %d %s", "Aggregating trades took ", d.toMillis(), " ms in Parallel mode.");
     }
 
     public static void main(String[] args) {
         PerformanceMeasurement pm = new PerformanceMeasurement();
-       // pm.sumTradesInSerial();
+        pm.sumTradesInSerial();
+        System.out.println("\n**********");
         pm.sumTradesInParallel();
     }
 }

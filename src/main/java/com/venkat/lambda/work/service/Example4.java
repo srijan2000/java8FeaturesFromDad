@@ -35,12 +35,10 @@ public class Example4 {
 
         Optional<String> any = ex.employees.stream()
                 .map(employee -> employee.getPhoneNumbers().stream())
-                .flatMap( stringStream -> stringStream.filter(phoneNo -> phoneNo.equals("231 111 231")))
+                .flatMap(stringStream -> stringStream.filter(phoneNo -> phoneNo.equals("231 111 231")))
                 .findAny();
 
         any.ifPresent(System.out::println);
-
-
 
     }
 

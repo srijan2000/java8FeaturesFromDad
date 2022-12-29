@@ -10,10 +10,11 @@ public class LazyAndEagerStreams {
     List<Movie> movies = MovieUtil.createMovies();
 
     private void testLazy(){
-        movies.stream().filter(m -> {
+        long count = movies.stream().filter(m -> {
             System.out.println("Inside lazy operation");
             return m.isClassic();
         }).count();
+        System.out.println(count);
     }
 
     private void testEager(){

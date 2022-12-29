@@ -37,7 +37,6 @@ public class MovieUtil {
 		List<Actor> actors = new ArrayList<>();
 		Actor actor = null;
 		Movie movie = null;
-
 		
 		movie = new Movie("Sound Of Music");
 		actor = new Actor("Julie Andrews");
@@ -60,6 +59,5 @@ public class MovieUtil {
 		return movies;
 
 	}
-
 	
 }

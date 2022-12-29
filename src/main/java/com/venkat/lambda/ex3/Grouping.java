@@ -41,10 +41,15 @@ public class Grouping {
 
     public static void main(String[] args) {
         Grouping g = new Grouping();
+        System.out.println("******BY Department********");
         g.groupingByDepartment();
+        System.out.println("******BY City********");
         g.groupingByCity();
+        System.out.println("******DepartmentAndExec********");
         g.groupingByDepartmentAndExec();
+        System.out.println("******BY List********");
         g.groupingByList();
+        System.out.println("******By Count********");
         g.groiupingByCount();
     }
 }
