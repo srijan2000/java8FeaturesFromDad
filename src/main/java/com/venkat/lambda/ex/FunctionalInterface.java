@@ -8,9 +8,10 @@ public class FunctionalInterface {
     }
 
     //Lambda expression
-    Multiplier m = (p, q) -> p * q;
+    static Multiplier m = (p, q) -> p * q;
 
     public static void main(String[] args) {
         FunctionalInterface fi = new FunctionalInterface();
+        System.out.println("mulitiplication " + m.multiply(4,5));
     }
 }
